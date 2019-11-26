@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dame</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- import the webpage's client-side javascript file -->
+    
+  </head>
+  <body>
+    <script src="client.js" defer></script>
+    <button id="logout">
+      Log Out
+      </button>
+    <h1> DAME </h1>
+    <div id="l">
+    
+    <p id="info"> </p>
+    <p id="nb"> </p>
+      <main id="main">
+      <form id="login">
+            <div >
+                <label  for="uname"><b>Username</b></label>
+                <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+  
+                <label for="psw"><b>Password</b></label>
+                <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+  
+                <button type="submit" class="login">Login</button>
+                <hr>
+          </div>
+
+          <div class="container">
+                <button type="button" class="cancelbtn" formaction="/tr">Cancel</button>
+                <!-- <button type="button" class="signup" >Creer un compte</button>-->
+
+                <span style="float:right">Creer un compte <a class="go_to_signup">ici</a> </span>
+          </div>
+   </form>
+       
+    
+ </main>
+    <!--ceci ne peut rester dans le main-->
+    <div id="message">
+      <h3>Password must contain the following:</h3>
+      <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+      <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+      <p id="number" class="invalid">A <b>number</b></p>
+      <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+</div>
+  </body>
+</html>
+
