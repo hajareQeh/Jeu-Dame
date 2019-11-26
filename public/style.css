@@ -1,0 +1,225 @@
+/**{
+  box-sizing: border-box;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+*/
+html{
+  
+    
+background-image: linear-gradient(white, #8F5902);
+  
+background-repeat: no-repeat;
+  background-size: 100% 100%;
+    height:100%;
+}
+
+
+body{
+/*  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;*/
+display: flex;
+flex-direction: column;
+font-family: 'Trebuchet MS', Arial, sans-serif; 
+font-size: 100%; 
+font-weight: bold; 
+letter-spacing: 1px; 
+line-height: 1;
+
+}
+#l{
+
+   height: 100%; 
+}
+p {
+  max-width: 600px;
+}
+.go_to_signup { cursor: -webkit-grab; cursor: grab ;
+          color : blue;
+}
+form{
+  margin-bottom: 25%;
+  margin-left: 25%;
+/*	display: flex;*/
+	flex-direction: column;
+	align-items: center;
+  background-color: #ECC87B;
+  width: 50%;
+  padding: 15px;
+  display: inline-block;
+	
+}
+
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+
+
+h1 {
+  font-style: italic;
+  font-size: 100px;
+  text-align:center;
+  font-weight:lighter;
+  color: brown;
+  
+}
+
+h1:after{
+  width: 100px;
+  height: 50px;
+  content : "\0026C0";
+  color: red;
+}
+
+#main td{   
+  width:  40px;
+  height: 40px;
+  /*background-color: green;*/
+
+}
+#info{
+  color: red;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nb{
+  color: green;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main table{  
+  border: 2px solid black;
+  background-color: #ECC87B;
+  
+}
+
+.black{
+    background-color: black;
+}  
+.white{
+    background-color: #ECC87B;
+}  
+.PION_W:after{
+ 
+  width: 40px;
+  height: 40px;
+  content : "\0026C0";
+  color: white;
+}
+
+.shine:after{
+   background: border-box brown; 
+ 
+   content: "\0026C0";
+}
+
+.PION_B:after{
+  width: 40px;
+  height: 40px;
+    content : "\0026C0";
+  color: black;
+}
+
+.dame_w:after{
+ width: 40px;
+  height: 40px;
+  
+  content : "\0026C2";
+  color: white;
+}
+
+.dame_b:after{
+ width: 40px;
+  height: 40px;
+  
+  content : "\0026C2";
+  color: black;
+}
+
+
+/******************SignUp password message********************/
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background-color: #ffffff;
+  opacity: 0.5;
+  color: #000;
+  width:400px;
+  position: relative;
+  padding: 20px;
+   margin: auto;
+  margin-top: -120px;
+}
+
+#message p {
+  padding: 5px 35px;
+  font-size: 15px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+/********Logout************/
+#logout{
+  width:100px;
+  right:25px;
+  position : absolute;
+  top:10px;
+  color: blue;
+ display:none;
+}
+
+/******************End SignUp password message********************/
